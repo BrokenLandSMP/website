@@ -1,4 +1,4 @@
-import { BookOpen, Users } from 'lucide-react';
+import { BookOpen, Users, Box } from 'lucide-react';
 
 interface Feature {
   id: string;
@@ -27,6 +27,14 @@ export default function FeatureCards() {
       link: '/characters',
       isExternal: false,
     },
+    {
+      id: 'brokelondon',
+      icon: <Box size={32} />,
+      title: '破产伦敦',
+      description: 'BrokenLand 官方生存服务器。',
+      link: '/brokelondon',
+      isExternal: false,
+    },
   ];
 
   return (
@@ -45,7 +53,7 @@ export default function FeatureCards() {
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <a
               key={feature.id}
