@@ -16,12 +16,13 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-[#68447c] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">BL</span>
-              </div>
-              <span className="text-lg font-bold text-[#68447c]">
-                BrokenLand
-              </span>
+              <a href="#home" className="flex items-center">
+                <img 
+                  src="/logo.png" 
+                  alt="BrokenLand Logo" 
+                  className="h-10 w-auto object-contain"
+                />
+              </a>
             </div>
             <p className="text-slate-500 text-sm max-w-xs">
               一个破碎的世界，无尽的故事。在 BrokenLand SMP 中发现属于你的传奇。
