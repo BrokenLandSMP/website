@@ -15,32 +15,15 @@ export default function CTASection() {
         </p>
 
         {/* Call to Action */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center">
           <a
-            href="https://discord.gg/brokenland"
+            href="https://brokenland-smp.fandom.com/zh"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-110 active:scale-95 w-full sm:w-auto"
+            className="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-110 active:scale-95"
           >
-            加入 Discord 社区
+            查看 Wiki
           </a>
-          <a
-            href="#lore"
-            className="px-8 py-4 border-2 border-cyan-400 text-cyan-400 rounded-lg font-bold text-lg hover:bg-cyan-400/10 transition-all duration-300 hover:scale-105 active:scale-95 w-full sm:w-auto text-center"
-          >
-            了解更多故事
-          </a>
-        </div>
-
-        {/* Additional Info */}
-        <div className="mt-12 pt-12 border-t border-slate-700/50">
-          <p className="text-slate-500 text-sm">
-            想要了解 BrokenLand 的世界观？查看我们的{' '}
-            <a href="#lore" className="text-amber-400 hover:text-amber-300 transition-colors">
-              世界百科
-            </a>
-            {' '}或在 Discord 中与我们交流。
-          </p>
         </div>
       </div>
     </section>

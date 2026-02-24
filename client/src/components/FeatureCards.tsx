@@ -1,4 +1,4 @@
-import { BookOpen, Users, MapPin, Zap } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 
 interface Feature {
   id: string;
@@ -15,38 +15,12 @@ export default function FeatureCards() {
     {
       id: 'wiki',
       icon: <BookOpen size={32} />,
-      title: '世界百科',
+      title: 'Wiki',
       description: '探索 BrokenLand 的完整世界观、角色档案和剧情时间线。',
-      link: '#wiki',
+      link: 'https://brokenland-smp.fandom.com/zh',
       color: 'from-amber-500 to-amber-600',
       image:
-        'https://private-us-east-1.manuscdn.com/sessionFile/Vy9yNvzfuMwjCRx9UrxlpN/sandbox/kT9fWzmqNCtrk1YscpPuO4-img-2_1771895142000_na1fn_YnJva2VubGFuZC1jYXJkLTE.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVnk5eU52emZ1TXdqQ1J4OVVyeGxwTi9zYW5kYm94L2tUOWZXem1xTkN0cmsxWXNjcFB1TzQtaW1nLTJfMTc3MTg5NTE0MjAwMF9uYTFmbl9Zbkp2YTJWdWJHRnVaQzFqWVhKa0xURS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=XF7vGTf5tnxrI-l3shpQ4V-pYVktgOpu7NUWN4vjpYI5ehMBlsE6sjNdd6RYUZR87zGawGuYKqvSrpM527vZARC1vTFqgdTrmd~uGpnEt766muMHhf5Dk4FV4wncRqM7~RHd90lXH6dcnXw1JNPGjZI-QOUTnz2g7kU86I0C-sagW9MIVsHFUZFU9RDl7lmf-fntN8OAr7XNnCMmYt~r3-Ox8uc4UML9ZjOgZCAEL5~0jqUp07ziHFp1N9uIQ2FvQ5Opr4t~WwBP8UbiUeote4uyysGII-cx1UJDPmK4H6DpLiSQj6gan8-lBRIjM35D79rLmonXg50k7m4Ancspvg__',
-    },
-    {
-      id: 'discord',
-      icon: <Users size={32} />,
-      title: '加入社区',
-      description: '与其他玩家交流、分享创意、参与服务器活动。',
-      link: 'https://discord.gg/brokenland',
-      color: 'from-cyan-500 to-cyan-600',
-      image:
-        'https://private-us-east-1.manuscdn.com/sessionFile/Vy9yNvzfuMwjCRx9UrxlpN/sandbox/kT9fWzmqNCtrk1YscpPuO4-img-3_1771895142000_na1fn_YnJva2VubGFuZC1jYXJkLTI.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVnk5eU52emZ1TXdqQ1J4OVVyeGxwTi9zYW5kYm94L2tUOWZXem1xTkN0cmsxWXNjcFB1TzQtaW1nLTNfMTc3MTg5NTE0MjAwMF9uYTFmbl9Zbkp2YTJWdWJHRnVaQzFqWVhKa0xUSS5wbmc~eC1vc3MtcHJvY2Vzcz1pbWFnZS9yZXNpemUsd18xOTIwLGhfMTkyMC9mb3JtYXQsd2VicC9xdWFsaXR5LHFfODAiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3OTg3NjE2MDB9fX1dfQ__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=vAuruo9k7VTj-2zSqSl0B6r4rzVyMrrkmwqWsDVYheggDV4FPjnTPHv1TAW62Ai67UVYVoq9L8Za2DjWCo5-ABsalkKxB9P6CT6FNTIV2ovl2KjF2uOx9piWV91L7mwDwK126Lc5lVRTc2DUxiGfkNGjW1yKxqhF4YlogmJsbkkn2SYQK5eBm5-hOCd79ooWk2LzmaVSxB8AT2XsolPLY2BzCKDa4PfMLhraOLCRa3XlGXMdZ4Of7uMMM~W9xKDQex8VJuAnExlwY-~H0DmaEuEkD9DaT~HYu3VAXqfYhMt1Crm19YnIJokih~zmP9QiGJPLFLnu-zNQJ-O0ZCECw__',
-    },
-    {
-      id: 'map',
-      icon: <MapPin size={32} />,
-      title: '互动地图',
-      description: '浏览服务器地图，发现重要地标和玩家建筑。',
-      link: '#map',
-      color: 'from-purple-500 to-purple-600',
-    },
-    {
-      id: 'rules',
-      icon: <Zap size={32} />,
-      title: '服务器规则',
-      description: '了解服务器规则、白名单申请和常见问题。',
-      link: '#rules',
-      color: 'from-pink-500 to-pink-600',
+        'https://private-us-east-1.manuscdn.com/sessionFile/Vy9yNvzfuMwjCRx9UrxlpN/sandbox/kT9fWzmqNCtrk1YscpPuO4-img-2_1771895142000_na1fn_YnJva2VubGFuZC1jYXJkLTE.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVnk5eU52emZ1TXdqQ1J4OVVyeGxwTi9zYW5kYm94L2tUOWZXem1xTkN0cmsxWXNjcFB1TzQtaW1nLTJfMTc3MTg5NTE0MjAwMF9uYTFmbl9Zbkp2YTJWdWJHRnVaQzFqWVhKa0xURTA5cG5nL3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=XF7vGTf5tnxrI-l3shpQ4V-pYVktgOpu7NUWN4vjpYI5ehMBlsE6sjNdd6RYUZR87zGawGuYKqvSrpM527vZARC1vTFqgdTrmd~uGpnEt766muMHhf5Dk4FV4wncRqM7~RHd90lXH6dcnXw1JNPGjZI-QOUTnz2g7kU86I0C-sagW9MIVsHFUZFU9RDl7lmf-fntN8OAr7XNnCMmYt~r3-Ox8uc4UML9ZjOgZCAEL5~0jqUp07ziHFp1N9uIQ2FvQ5Opr4t~WwBP8UbiUeote4uyysGII-cx1UJDPmK4H6DpLiSQj6gan8-lBRIjM35D79rLmonXg50k7m4Ancspvg__',
     },
   ];
 
@@ -61,17 +35,19 @@ export default function FeatureCards() {
             </span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            从世界百科到社区互动，找到你感兴趣的内容
+            深入了解这个破碎世界的故事与传奇
           </p>
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="flex justify-center">
           {features.map((feature, index) => (
             <a
               key={feature.id}
               href={feature.link}
-              className="group relative h-80 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full max-w-md h-80 rounded-xl overflow-hidden cursor-pointer transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               style={{
                 animationDelay: `${index * 100}ms`,
               }}

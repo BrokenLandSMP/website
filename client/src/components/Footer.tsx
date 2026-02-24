@@ -1,12 +1,10 @@
-import { Github, Mail, Globe } from 'lucide-react';
+import { Globe } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Globe size={20} />, label: 'Website', href: '#' },
-    { icon: <Mail size={20} />, label: 'Email', href: 'mailto:contact@brokenland.com' },
-    { icon: <Github size={20} />, label: 'GitHub', href: 'https://github.com' },
+    { icon: <Globe size={20} />, label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh' },
   ];
 
   const footerLinks = [
