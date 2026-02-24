@@ -4,7 +4,7 @@ export default function CTASection() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Heading */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          <span className="text-purple-500">
+          <span className="text-[#68447c]">
             加入我们的冒险
           </span>
         </h2>
@@ -20,7 +20,7 @@ export default function CTASection() {
             href="https://brokenland-smp.fandom.com/zh"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-purple-600 text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-purple-600/50 transition-all duration-300 hover:scale-110 active:scale-95"
+            className="px-8 py-4 bg-[#68447c] text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#68447c]/50 transition-all duration-300 hover:scale-110 active:scale-95"
           >
             查看 Wiki
           </a>
