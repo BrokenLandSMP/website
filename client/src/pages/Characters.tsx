@@ -1,10 +1,10 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { User } from 'lucide-react';
 
 interface Character {
   name: string;
   description: string;
+  image?: string;
 }
 
 export default function Characters() {
@@ -12,14 +12,17 @@ export default function Characters() {
     {
       name: 'Fuvin',
       description: 'BrokenLand SMP 主催',
+      image: '/char-fuvin.png',
     },
     {
       name: 'Naaatako',
       description: '船队首领，神秘 coder',
+      image: '/char-naaatako.png', // 预留位置
     },
     {
       name: 'katebulaie233',
       description: '死因：被 fuvin ban 后成为恶搞大师',
+      image: '/char-katebulaie233.png', // 预留位置
     },
   ];
 
@@ -44,23 +47,38 @@ export default function Characters() {
             {characters.map((char, index) => (
               <div
                 key={char.name}
-                className="bg-slate-800 border border-slate-700/50 rounded-xl p-8 transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+                className="bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
               >
-                {/* Avatar Placeholder */}
-                <div className="w-20 h-20 rounded-full bg-[#68447c]/20 flex items-center justify-center text-[#68447c] mb-6 group-hover:bg-[#68447c] group-hover:text-white transition-colors duration-300">
-                  <User size={40} />
+                {/* Character Image Area */}
+                <div className="h-80 bg-slate-950/50 flex items-center justify-center overflow-hidden relative">
+                  {char.image ? (
+                    <img 
+                      src={char.image} 
+                      alt={char.name}
+                      className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                      onError={(e) => {
+                        // 如果图片不存在，显示占位符
+                        (e.target as HTMLImageElement).style.display = 'none';
+                        (e.target as HTMLImageElement).parentElement!.innerHTML = '<div class="text-slate-700 font-bold text-xl">暂无图片</div>';
+                      }}
+                    />
+                  ) : (
+                    <div className="text-slate-700 font-bold text-xl">暂无图片</div>
+                  )}
                 </div>
 
                 {/* Character Info */}
-                <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#68447c] transition-colors">
-                  {char.name}
-                </h3>
-                <p className="text-slate-400 text-base leading-relaxed">
-                  {char.description}
-                </p>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#68447c] transition-colors">
+                    {char.name}
+                  </h3>
+                  <p className="text-slate-400 text-base leading-relaxed">
+                    {char.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
