@@ -1,10 +1,11 @@
-import { Globe } from 'lucide-react';
+import { Book, Tv } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Globe size={20} />, label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh' },
+    { icon: <Book size={20} />, label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh' },
+    { icon: <Tv size={20} />, label: 'Bilibili', href: 'https://space.bilibili.com/630817314' },
   ];
 
   return (
