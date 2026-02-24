@@ -43,15 +43,15 @@
 }
 
 :root {
-  --primary: #fbbf24;
+  --primary: #a855f7;
   --primary-foreground: #0f172a;
-  --sidebar-primary: #fbbf24;
+  --sidebar-primary: #a855f7;
   --sidebar-primary-foreground: #0f172a;
-  --chart-1: #06b6d4;
-  --chart-2: #fbbf24;
-  --chart-3: #8b5cf6;
-  --chart-4: #ec4899;
-  --chart-5: #f43f5e;
+  --chart-1: #7c3aed;
+  --chart-2: #a855f7;
+  --chart-3: #c084fc;
+  --chart-4: #d8b4fe;
+  --chart-5: #e9d5ff;
   --radius: 0.65rem;
   --background: #0f172a;
   --foreground: #f1f5f9;
@@ -63,25 +63,25 @@
   --secondary-foreground: #e0e7ff;
   --muted: #334155;
   --muted-foreground: #cbd5e1;
-  --accent: #06b6d4;
+  --accent: #c084fc;
   --accent-foreground: #0f172a;
   --destructive: #ef4444;
   --destructive-foreground: #fef2f2;
   --border: #334155;
   --input: #1e293b;
-  --ring: #fbbf24;
+  --ring: #a855f7;
   --sidebar: #0f172a;
   --sidebar-foreground: #f1f5f9;
-  --sidebar-accent: #06b6d4;
+  --sidebar-accent: #c084fc;
   --sidebar-accent-foreground: #0f172a;
   --sidebar-border: #334155;
-  --sidebar-ring: #fbbf24;
+  --sidebar-ring: #a855f7;
 }
 
 .dark {
-  --primary: #fbbf24;
+  --primary: #a855f7;
   --primary-foreground: #0f172a;
-  --sidebar-primary: #fbbf24;
+  --sidebar-primary: #a855f7;
   --sidebar-primary-foreground: #0f172a;
   --background: #0f172a;
   --foreground: #f1f5f9;
@@ -93,24 +93,24 @@
   --secondary-foreground: #e0e7ff;
   --muted: #334155;
   --muted-foreground: #cbd5e1;
-  --accent: #06b6d4;
+  --accent: #c084fc;
   --accent-foreground: #0f172a;
   --destructive: #ef4444;
   --destructive-foreground: #fef2f2;
   --border: #334155;
   --input: #1e293b;
-  --ring: #fbbf24;
-  --chart-1: #06b6d4;
-  --chart-2: #fbbf24;
-  --chart-3: #8b5cf6;
-  --chart-4: #ec4899;
-  --chart-5: #f43f5e;
+  --ring: #a855f7;
+  --chart-1: #7c3aed;
+  --chart-2: #a855f7;
+  --chart-3: #c084fc;
+  --chart-4: #d8b4fe;
+  --chart-5: #e9d5ff;
   --sidebar: #0f172a;
   --sidebar-foreground: #f1f5f9;
-  --sidebar-accent: #06b6d4;
+  --sidebar-accent: #c084fc;
   --sidebar-accent-foreground: #0f172a;
   --sidebar-border: #334155;
-  --sidebar-ring: #fbbf24;
+  --sidebar-ring: #a855f7;
 }
 
 @layer base {

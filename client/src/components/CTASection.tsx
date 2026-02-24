@@ -1,10 +1,10 @@
 export default function CTASection() {
   return (
-    <section id="join" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-slate-900 to-slate-950">
+    <section id="join" className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Heading */}
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-          <span className="bg-gradient-to-r from-amber-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <span className="text-purple-500">
             加入我们的冒险
           </span>
         </h2>
@@ -20,7 +20,7 @@ export default function CTASection() {
             href="https://brokenland-smp.fandom.com/zh"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-110 active:scale-95"
+            className="px-8 py-4 bg-purple-600 text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-purple-600/50 transition-all duration-300 hover:scale-110 active:scale-95"
           >
             查看 Wiki
           </a>

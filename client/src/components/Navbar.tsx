@@ -12,15 +12,15 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-slate-900 via-slate-900 to-transparent backdrop-blur-sm border-b border-slate-700/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-slate-900 backdrop-blur-sm border-b border-slate-700/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-gradient-to-br from-amber-400 to-cyan-400 rounded-lg flex items-center justify-center">
-              <span className="text-slate-900 font-bold text-sm">BL</span>
+            <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-sm">BL</span>
             </div>
-            <span className="text-xl font-bold bg-gradient-to-r from-amber-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="text-xl font-bold text-purple-500">
               BrokenLand
             </span>
           </div>
@@ -31,7 +31,7 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-slate-300 hover:text-amber-400 transition-colors duration-300 font-medium text-sm"
+                className="text-slate-300 hover:text-purple-400 transition-colors duration-300 font-medium text-sm"
               >
                 {link.label}
               </a>
@@ -42,7 +42,7 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-slate-300 hover:text-amber-400 transition-colors"
+            className="md:hidden text-slate-300 hover:text-purple-400 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -57,7 +57,7 @@ export default function Navbar() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-slate-300 hover:text-amber-400 transition-colors font-medium"
+                  className="text-slate-300 hover:text-purple-400 transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}

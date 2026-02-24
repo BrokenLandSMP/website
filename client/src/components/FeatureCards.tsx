@@ -6,7 +6,6 @@ interface Feature {
   title: string;
   description: string;
   link: string;
-  color: string;
   image?: string;
 }
 
@@ -18,7 +17,6 @@ export default function FeatureCards() {
       title: 'Wiki',
       description: '探索 BrokenLand 的完整世界观、角色档案和剧情时间线。',
       link: 'https://brokenland-smp.fandom.com/zh',
-      color: 'from-amber-500 to-amber-600',
       image:
         'https://private-us-east-1.manuscdn.com/sessionFile/Vy9yNvzfuMwjCRx9UrxlpN/sandbox/kT9fWzmqNCtrk1YscpPuO4-img-2_1771895142000_na1fn_YnJva2VubGFuZC1jYXJkLTE.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80&Expires=1798761600&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9wcml2YXRlLXVzLWVhc3QtMS5tYW51c2Nkbi5jb20vc2Vzc2lvbkZpbGUvVnk5eU52emZ1TXdqQ1J4OVVyeGxwTi9zYW5kYm94L2tUOWZXem1xTkN0cmsxWXNjcFB1TzQtaW1nLTJfMTc3MTg5NTE0MjAwMF9uYTFmbl9Zbkp2YTJWdWJHRnVaQzFqWVhKa0xURTA5cG5nL3gtb3NzLXByb2Nlc3M9aW1hZ2UvcmVzaXplLHdfMTkyMCxoXzE5MjAvZm9ybWF0LHdlYnAvcXVhbGl0eSxxXzgwIiwiQ29uZGl0aW9uIjp7IkRhdGVMZXNzVGhhbiI6eyJBV1M6RXBvY2hUaW1lIjoxNzk4NzYxNjAwfX19XX0__&Key-Pair-Id=K2HSFNDJXOU9YS&Signature=XF7vGTf5tnxrI-l3shpQ4V-pYVktgOpu7NUWN4vjpYI5ehMBlsE6sjNdd6RYUZR87zGawGuYKqvSrpM527vZARC1vTFqgdTrmd~uGpnEt766muMHhf5Dk4FV4wncRqM7~RHd90lXH6dcnXw1JNPGjZI-QOUTnz2g7kU86I0C-sagW9MIVsHFUZFU9RDl7lmf-fntN8OAr7XNnCMmYt~r3-Ox8uc4UML9ZjOgZCAEL5~0jqUp07ziHFp1N9uIQ2FvQ5Opr4t~WwBP8UbiUeote4uyysGII-cx1UJDPmK4H6DpLiSQj6gan8-lBRIjM35D79rLmonXg50k7m4Ancspvg__',
     },
@@ -30,7 +28,7 @@ export default function FeatureCards() {
         {/* Section Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-amber-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="text-purple-500">
               探索 BrokenLand
             </span>
           </h2>
@@ -60,26 +58,19 @@ export default function FeatureCards() {
                 />
               )}
 
-              {/* Gradient Overlay */}
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${feature.color} opacity-0 group-hover:opacity-30 transition-opacity duration-300`}
-              />
-
               {/* Dark Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent" />
+              <div className="absolute inset-0 bg-slate-900/60" />
 
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-between p-6">
                 {/* Icon */}
-                <div
-                  className={`w-12 h-12 rounded-lg bg-gradient-to-br ${feature.color} flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300`}
-                >
+                <div className="w-12 h-12 rounded-lg bg-purple-600 flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                   {feature.icon}
                 </div>
 
                 {/* Text */}
                 <div>
-                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-amber-300 transition-colors">
+                  <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
                     {feature.title}
                   </h3>
                   <p className="text-slate-300 text-sm leading-relaxed">
@@ -88,7 +79,7 @@ export default function FeatureCards() {
                 </div>
 
                 {/* Arrow Indicator */}
-                <div className="text-amber-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="text-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   →
                 </div>
               </div>

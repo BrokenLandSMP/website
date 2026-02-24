@@ -15,15 +15,15 @@ export default function HeroSection() {
           backgroundAttachment: 'fixed',
         }}
       >
-        {/* Dark Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/60 via-slate-900/70 to-slate-900/80" />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-slate-900/80" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
         {/* Main Title */}
         <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
+          <span className="text-purple-500">
             BrokenLand
           </span>
           <br />
@@ -39,7 +39,7 @@ export default function HeroSection() {
         <div className="flex justify-center animate-fade-in-delay-2">
           <a
             href="#lore"
-            className="px-8 py-3 border-2 border-amber-400 text-amber-400 rounded-lg font-bold text-lg hover:bg-amber-400/10 transition-all duration-300 hover:scale-105 active:scale-95"
+            className="px-8 py-3 border-2 border-purple-500 text-purple-400 rounded-lg font-bold text-lg hover:bg-purple-500/10 transition-all duration-300 hover:scale-105 active:scale-95"
           >
             探索故事
           </a>
@@ -48,8 +48,8 @@ export default function HeroSection() {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
-        <div className="w-6 h-10 border-2 border-amber-400 rounded-full flex items-start justify-center p-2">
-          <div className="w-1 h-2 bg-amber-400 rounded-full animate-pulse" />
+        <div className="w-6 h-10 border-2 border-purple-500 rounded-full flex items-start justify-center p-2">
+          <div className="w-1 h-2 bg-purple-500 rounded-full animate-pulse" />
         </div>
       </div>
     </section>

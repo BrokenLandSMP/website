@@ -21,10 +21,10 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-amber-400 to-cyan-400 rounded-lg flex items-center justify-center">
-                <span className="text-slate-900 font-bold text-sm">BL</span>
+              <div className="w-8 h-8 bg-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">BL</span>
               </div>
-              <span className="text-lg font-bold bg-gradient-to-r from-amber-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="text-lg font-bold text-purple-500">
                 BrokenLand
               </span>
             </div>
@@ -41,7 +41,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-slate-500 hover:text-amber-400 transition-colors text-sm"
+                    className="text-slate-500 hover:text-purple-400 transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -60,7 +60,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-lg bg-slate-800/50 hover:bg-gradient-to-br hover:from-amber-400/20 hover:to-cyan-400/20 text-slate-400 hover:text-amber-400 transition-all duration-300 flex items-center justify-center"
+                  className="w-10 h-10 rounded-lg bg-slate-800/50 hover:bg-purple-600/20 text-slate-400 hover:text-purple-400 transition-all duration-300 flex items-center justify-center"
                   title={link.label}
                 >
                   {link.icon}
@@ -79,7 +79,7 @@ export default function Footer() {
             </p>
             <p className="text-slate-600 text-sm">
               Made with{' '}
-              <span className="text-amber-400">♥</span>
+              <span className="text-purple-500">♥</span>
               {' '}by the BrokenLand Team
             </p>
           </div>
