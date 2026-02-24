@@ -38,15 +38,7 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <a
-              href="#join"
-              className="px-6 py-2 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-semibold hover:shadow-lg hover:shadow-amber-400/50 transition-all duration-300 hover:scale-105"
-            >
-              加入服务器
-            </a>
-          </div>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -71,13 +63,6 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="#join"
-                className="px-4 py-2 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-semibold text-center"
-                onClick={() => setIsOpen(false)}
-              >
-                加入服务器
-              </a>
             </div>
           </div>
         )}

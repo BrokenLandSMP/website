@@ -35,19 +35,13 @@ export default function HeroSection() {
           一个破碎的世界，无尽的故事。在这片被魔法撕裂的大陆上，发现属于你的传奇。
         </p>
 
-        {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay-2">
-          <a
-            href="#join"
-            className="px-8 py-3 bg-gradient-to-r from-amber-400 to-amber-500 text-slate-900 rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-amber-400/50 transition-all duration-300 hover:scale-110 active:scale-95"
-          >
-            立即加入
-          </a>
+        {/* CTA Button */}
+        <div className="flex justify-center animate-fade-in-delay-2">
           <a
             href="#lore"
-            className="px-8 py-3 border-2 border-cyan-400 text-cyan-400 rounded-lg font-bold text-lg hover:bg-cyan-400/10 transition-all duration-300 hover:scale-105 active:scale-95"
+            className="px-8 py-3 border-2 border-amber-400 text-amber-400 rounded-lg font-bold text-lg hover:bg-amber-400/10 transition-all duration-300 hover:scale-105 active:scale-95"
           >
-            了解故事
+            探索故事
           </a>
         </div>
       </div>
