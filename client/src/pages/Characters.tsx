@@ -17,12 +17,12 @@ export default function Characters() {
     {
       name: 'Naaatako',
       description: '船队首领，神秘 coder',
-      image: '/char-naaatako.png', // 预留位置
+      image: '/char-naaatako.png',
     },
     {
-      name: 'katebulaie233',
-      description: '死因：被 fuvin ban 后成为恶搞大师',
-      image: '/char-katebulaie233.png', // 预留位置
+      name: 'CHa2OnG',
+      description: '打赢复活赛了',
+      image: '/char-cha2ong.png',
     },
   ];
 
@@ -60,7 +60,6 @@ export default function Characters() {
                       alt={char.name}
                       className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => {
-                        // 如果图片不存在，显示占位符
                         (e.target as HTMLImageElement).style.display = 'none';
                         (e.target as HTMLImageElement).parentElement!.innerHTML = '<div class="text-slate-700 font-bold text-xl">暂无图片</div>';
                       }}
