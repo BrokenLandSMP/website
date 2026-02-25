@@ -53,8 +53,8 @@ export default function Footer() {
         <div className="border-t border-slate-800/50 pt-8">
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-slate-600 text-sm">
-              © {currentYear} BrokenLand SMP. All rights reserved.
+            <p className="text-slate-600 text-sm flex items-center flex-wrap gap-1">
+              <a href="https://brokenland.top" className="text-slate-600 hover:text-[#68447c] transition-colors">BrokenLand SMP Website</a> © 2026 is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" className="text-slate-600 hover:text-[#68447c] transition-colors">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} />
             </p>
             <p className="text-slate-600 text-sm">
               Made with{' '}

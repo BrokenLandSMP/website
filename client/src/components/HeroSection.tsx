@@ -34,7 +34,7 @@ export default function HeroSection() {
 
         {/* Subtitle */}
         <p className="text-lg sm:text-xl text-slate-300 mb-8 max-w-2xl mx-auto leading-relaxed animate-fade-in-delay">
-          一个破碎的世界，无尽的故事。在这片被魔法撕裂的大陆上，发现属于你的传奇。
+          一个破碎的世界，无尽的故事。在这片被污染的大陆上，发现群星的传奇。
         </p>
 
         {/* CTA Button */}

@@ -15,7 +15,7 @@ export default function FeatureCards() {
       id: 'wiki',
       icon: <BookOpen size={32} />,
       title: 'Wiki',
-      description: '探索 BrokenLand 的完整世界观、角色档案和剧情时间线。',
+      description: '探索 BrokenLand SMP 的完整世界观、角色档案和剧情时间线。',
       link: 'https://brokenland-smp.fandom.com/zh',
       isExternal: true,
     },
@@ -23,7 +23,7 @@ export default function FeatureCards() {
       id: 'characters',
       icon: <Users size={32} />,
       title: '角色介绍',
-      description: '深入了解 BrokenLand 中的传奇人物及其背后的故事。',
+      description: '深入了解 BrokenLand SMP 中的传奇人物及其背后的故事。',
       link: '/characters',
       isExternal: false,
     },
@@ -31,7 +31,7 @@ export default function FeatureCards() {
       id: 'brokelondon',
       icon: <Box size={32} />,
       title: '破产伦敦',
-      description: 'BrokenLand 官方生存服务器。',
+      description: 'BrokenLand SMP 官方生存服务器。',
       link: '/brokelondon',
       isExternal: false,
     },
@@ -44,7 +44,7 @@ export default function FeatureCards() {
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
             <span className="text-[#68447c]">
-              探索 BrokenLand
+              探索 BrokenLand SMP
             </span>
           </h2>
           <p className="text-slate-400 text-lg max-w-2xl mx-auto">
