@@ -58,9 +58,11 @@ export default function Footer() {
               <a href="https://brokenland.top" className="text-slate-600 hover:text-[#68447c] transition-colors">BrokenLand SMP Website</a> © 2026 is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" className="text-slate-600 hover:text-[#68447c] transition-colors">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} />
             </p>
             <p className="text-slate-600 text-sm">
-              Made with{' '}
-              <span className="text-[#68447c]">♥</span>
-              {' '}by the BrokenLand Team
+              <a href="https://github.com/BrokenLandSMP/website" target="_blank" rel="noopener noreferrer" className="hover:text-[#68447c] transition-colors">
+                Made with{' '}
+                <span className="text-[#68447c]">♥</span>
+                {' '}by the BrokenLand Team
+              </a>
             </p>
           </div>
         </div>
