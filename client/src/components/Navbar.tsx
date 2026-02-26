@@ -8,6 +8,7 @@ export default function Navbar() {
     { label: '角色', href: '/characters', isExternal: false },
     { label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh', isExternal: true },
     { label: 'QQ群', href: 'https://qun.qq.com/universal-share/share?ac=1&authKey=4w%2BIgjNFtjb8XP%2F8opgwd4FeZHEz%2BD33KqgWctFknIJ9kmCB1Z4bGNtV4uSiff%2Fa&busi_data=eyJncm91cENvZGUiOiI2NjQxODQxODUiLCJ0b2tlbiI6IlV5ZXAxZGtRUTJXZklQeUJkRGNKTU8vUjR0Vi9sWmh2akN6RWU3OTZ3MGMrdDV3ZzdJZzkyNTF5NjYwT21zbnYiLCJ1aW4iOiIzNTU0OTczNzA3In0%3D&data=saydWxXr7HmUz5ZmLYGcYzz_ZCo1mTe4W7o8DNd2zf5lFakZ_7bxlWqdlUKInvHE9_MfbpYkQorf76Sz9u2sRg&svctype=4&tempid=h5_group_info', isExternal: true },
+    { label: 'GitHub', href: 'https://github.com/BrokenLandSMP', isExternal: true },
   ];
 
   return (

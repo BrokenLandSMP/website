@@ -43,22 +43,22 @@ export default function Characters() {
           </div>
 
           {/* Characters Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 gap-8 max-w-4xl mx-auto">
             {characters.map((char, index) => (
               <div
                 key={char.name}
-                className="bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+                className="bg-slate-800 border border-slate-700/50 rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl group flex flex-col md:flex-row"
                 style={{
                   animationDelay: `${index * 100}ms`,
                 }}
               >
                 {/* Character Image Area */}
-                <div className="h-80 bg-slate-950/50 flex items-center justify-center overflow-hidden relative">
+                <div className="md:w-1/3 h-80 md:h-auto bg-slate-950/50 flex items-center justify-center overflow-hidden relative">
                   {char.image ? (
                     <img 
                       src={char.image} 
                       alt={char.name}
-                      className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+                      className="h-full w-full object-contain p-6 md:p-8 transition-transform duration-500 group-hover:scale-110"
                       onError={(e) => {
                         (e.target as HTMLImageElement).style.display = 'none';
                         (e.target as HTMLImageElement).parentElement!.innerHTML = '<div class="text-slate-700 font-bold text-xl">暂无图片</div>';
@@ -70,13 +70,15 @@ export default function Characters() {
                 </div>
 
                 {/* Character Info */}
-                <div className="p-8">
-                  <h3 className="text-2xl font-bold text-white mb-3 group-hover:text-[#68447c] transition-colors">
-                    {char.name}
-                  </h3>
-                  <p className="text-slate-400 text-base leading-relaxed">
-                    {char.description}
-                  </p>
+                <div className="md:w-2/3 p-8 flex items-start">
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-[#68447c] transition-colors">
+                      {char.name}
+                    </h3>
+                    <p className="text-slate-400 text-lg leading-relaxed">
+                      {char.description}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
