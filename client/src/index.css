@@ -228,4 +228,17 @@
       max-width: 1280px; /* Standard content width */
     }
   }
+
+  /* Custom font for character names */
+  @font-face {
+    font-family: 'ChangBanDianSong';
+    src: url('/fonts/ChangBanDianSong-16-SC.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  .font-changban {
+    font-family: 'ChangBanDianSong', system-ui, -apple-system, sans-serif;
+  }
 }

@@ -1,0 +1,16 @@
+Font License Information
+========================
+
+Font Name: ChangBanDianSong (16-SC)
+License: SIL Open Font License 1.1 (OFL-1.1)
+
+This font is licensed under the SIL Open Font License, Version 1.1.
+You are free to use, modify, and distribute this font under the terms of this license.
+
+For more information about the OFL, please visit:
+https://scripts.sil.org/OFL
+
+Source Repository:
+https://github.com/yzdnn/ChangBanDianSong-16
+
+Copyright and attribution information should be retained when using this font.

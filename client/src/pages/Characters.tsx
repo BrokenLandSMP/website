@@ -75,7 +75,7 @@ export default function Characters() {
                     <h3 className="text-3xl font-bold text-white mb-4 group-hover:text-[#68447c] transition-colors">
                       {char.name}
                     </h3>
-                    <p className="text-slate-400 text-lg leading-relaxed">
+                    <p className="font-changban text-slate-400 text-lg leading-relaxed">
                       {char.description}
                     </p>
                   </div>

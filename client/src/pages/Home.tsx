@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import FeatureCards from '@/components/FeatureCards';
+import PerspectiveSection from '@/components/PerspectiveSection';
 import CTASection from '@/components/CTASection';
 import Footer from '@/components/Footer';
 
@@ -15,6 +16,9 @@ export default function Home() {
 
       {/* Feature Cards */}
       <FeatureCards />
+
+      {/* Perspective Section */}
+      <PerspectiveSection />
 
       {/* CTA Section */}
       <CTASection />
