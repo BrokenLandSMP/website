@@ -17,7 +17,7 @@ export default function CTASection() {
         {/* Call to Action */}
         <div className="flex justify-center gap-4">
           <a
-            href="https://brokenland-smp.fandom.com/zh"
+            href="https://wiki.brokenland.top"
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 bg-[#68447c] text-white rounded-lg font-bold text-lg hover:shadow-2xl hover:shadow-[#68447c]/50 transition-all duration-300 hover:scale-110 active:scale-95"

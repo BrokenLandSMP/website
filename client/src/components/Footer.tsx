@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const socialLinks = [
-    { icon: <Book size={20} />, label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh' },
+    { icon: <Book size={20} />, label: 'Wiki', href: 'https://wiki.brokenland.top' },
     { icon: <Tv size={20} />, label: 'Bilibili', href: 'https://space.bilibili.com/630817314' },
     { icon: <Github size={20} />, label: 'GitHub', href: 'https://github.com/BrokenLandSMP' },
   ];
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Copyright */}
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-slate-600 text-sm flex items-center flex-wrap gap-1">
-              <a href="https://brokenland.top" className="text-slate-600 hover:text-[#68447c] transition-colors">BrokenLand SMP Website</a> © 2026 is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" className="text-slate-600 hover:text-[#68447c] transition-colors">CC BY-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="BY" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} /><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="SA" style={{ display: 'inline-block', verticalAlign: 'middle', width: '1em', height: '1em', marginLeft: '.2em' }} />
+              <a href="https://brokenland.top" className="text-slate-600 hover:text-[#68447c] transition-colors">BrokenLand SMP Website</a> © 2026 is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer" className="hover:text-[#68447c] transition-colors">CC BY-NC-SA 4.0</a>
             </p>
             <p className="text-slate-600 text-sm">
               <a href="https://github.com/BrokenLandSMP/website" target="_blank" rel="noopener noreferrer" className="hover:text-[#68447c] transition-colors">

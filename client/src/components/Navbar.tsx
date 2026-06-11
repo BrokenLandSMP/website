@@ -6,7 +6,7 @@ export default function Navbar() {
 
   const navLinks = [
     { label: '角色', href: '/characters', isExternal: false },
-    { label: 'Wiki', href: 'https://brokenland-smp.fandom.com/zh', isExternal: true },
+    { label: 'Wiki', href: 'https://wiki.brokenland.top', isExternal: true },
     { label: 'QQ群', href: '/qqgroup', isExternal: false },
     { label: 'GitHub', href: 'https://github.com/BrokenLandSMP', isExternal: true },
   ];

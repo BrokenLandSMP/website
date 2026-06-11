@@ -16,7 +16,7 @@ export default function FeatureCards() {
       icon: <BookOpen size={32} />,
       title: 'Wiki',
       description: '探索 BrokenLand SMP 的完整世界观、角色档案和剧情时间线。',
-      link: 'https://brokenland-smp.fandom.com/zh',
+      link: 'https://wiki.brokenland.top',
       isExternal: true,
     },
     {
