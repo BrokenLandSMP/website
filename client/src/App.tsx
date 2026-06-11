@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Characters from "./pages/Characters";
 import BrokeLondon from "./pages/BrokeLondon";
 import QQGroup from "./pages/QQGroup";
+import WikiMigrate from "./pages/WikiMigrate";
 
 
 function Router() {
@@ -17,6 +18,7 @@ function Router() {
       <Route path={"/characters"} component={Characters} />
       <Route path={"/brokelondon"} component={BrokeLondon} />
       <Route path={"/qqgroup"} component={QQGroup} />
+      <Route path={"/wikimigrate"} component={WikiMigrate} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
