@@ -1,6 +1,7 @@
 import { useLocation } from 'wouter';
 import { ArrowLeft, ExternalLink, CheckCircle2 } from 'lucide-react';
 import Navbar from '@/components/Navbar';
+import AnnouncementBanner from '@/components/AnnouncementBanner';
 import Footer from '@/components/Footer';
 
 export default function WikiMigrate() {
@@ -8,14 +9,15 @@ export default function WikiMigrate() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100">
+      <AnnouncementBanner />
       <Navbar />
       
-      <main className="pt-32 pb-20">
+      <main className="pt-28 pb-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Back Button */}
-          <button
+            <button
             onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-amber-400 hover:text-amber-300 transition-colors mb-8 group"
+            className="flex items-center gap-2 text-[#68447c] hover:text-[#8b5cf6] transition-colors mb-8 group"
           >
             <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
             返回首页
@@ -51,7 +53,7 @@ export default function WikiMigrate() {
               <h2 className="text-2xl font-bold text-white">当前状态</h2>
               <div className="grid gap-4">
                 <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-amber-400 mb-2">✅ 已完成</h3>
+                  <h3 className="text-lg font-semibold text-[#68447c] mb-2">✅ 已完成</h3>
                   <ul className="space-y-2 text-slate-300">
                     <li className="flex items-start gap-3">
                       <span className="text-green-400 mt-1">•</span>
@@ -91,7 +93,7 @@ export default function WikiMigrate() {
             {/* Wiki Link */}
             <section className="space-y-4">
               <h2 className="text-2xl font-bold text-white">访问新 Wiki</h2>
-              <div className="bg-gradient-to-r from-purple-600 to-indigo-600 rounded-lg p-8 text-center">
+              <div className="bg-slate-800 border border-[#68447c]/30 rounded-lg p-8 text-center">
                 <p className="text-slate-200 mb-4">
                   现在可以访问我们的新 Wiki 平台：
                 </p>
@@ -99,7 +101,7 @@ export default function WikiMigrate() {
                   href="https://wiki.brokenland.top"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white text-purple-600 font-bold py-3 px-8 rounded-lg hover:bg-slate-100 transition-colors text-lg"
+                  className="inline-flex items-center gap-2 bg-[#68447c] text-white px-6 py-3 rounded-lg font-bold hover:bg-[#8b5cf6] transition-colors shadow-lg shadow-[#68447c]/20"
                 >
                   wiki.brokenland.top
                   <ExternalLink size={20} />
@@ -142,7 +144,7 @@ export default function WikiMigrate() {
               </p>
               <a
                 href="/qqgroup"
-                className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 transition-colors text-white font-semibold py-2 px-6 rounded-lg"
+                className="inline-flex items-center gap-2 bg-[#68447c] hover:bg-[#8b5cf6] transition-colors text-white font-semibold py-2 px-6 rounded-lg"
               >
                 加入 QQ 群
               </a>

@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import AnnouncementBanner from '@/components/AnnouncementBanner';
 import Footer from '@/components/Footer';
 import { Box, ChevronDown } from 'lucide-react';
 
@@ -7,10 +8,11 @@ export default function BrokeLondon() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100">
+      <AnnouncementBanner />
       <Navbar />
 
       {/* Hero Section */}
-      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-28">
         {/* Background Image with Overlay */}
         <div
           className="absolute inset-0 bg-cover bg-center"

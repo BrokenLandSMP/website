@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar';
+import AnnouncementBanner from '@/components/AnnouncementBanner';
 import Footer from '@/components/Footer';
 
 export default function QQGroup() {
@@ -6,9 +7,10 @@ export default function QQGroup() {
 
   return (
     <div className="min-h-screen bg-slate-900 text-slate-100">
+      <AnnouncementBanner />
       <Navbar />
       
-      <main className="pt-32 pb-20 px-4 sm:px-6 lg:px-8">
+      <main className="pt-28 pb-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           {/* Page Title */}
           <div className="text-center mb-16">

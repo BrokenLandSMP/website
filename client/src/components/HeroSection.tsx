@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <section
       id="home"
-      className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-16"
+      className="relative w-full h-screen flex items-center justify-center overflow-hidden pt-28"
     >
       {/* Background Image with Overlay */}
       <div
