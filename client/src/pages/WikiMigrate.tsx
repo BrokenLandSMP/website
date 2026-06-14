@@ -29,7 +29,7 @@ export default function WikiMigrate() {
               BrokenLand SMP Wiki 迁移公告
             </h1>
             <p className="text-lg text-slate-400">
-              重要信息 · 2024年
+              重要信息 · 2026/06/14
             </p>
           </div>
 
